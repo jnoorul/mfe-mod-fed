@@ -10,6 +10,9 @@
     },
     "dev": {
       "cache": false
+    },
+    "mfe:start": {
+      "cache": false
     }
   }
 }
