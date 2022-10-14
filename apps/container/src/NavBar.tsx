@@ -1,11 +1,16 @@
 
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 export function NavBar() {
     return(
         <NavBarContainer>
-                <h6>Child App 1</h6>
-                <h6>Child App 2</h6>
+            <Link to="app1">
+                <h4>Child App 1</h4>
+            </Link>
+            <Link to="app2">
+                <h4>Child App 2</h4>
+            </Link>
         </NavBarContainer>
     )
 }
@@ -16,3 +21,4 @@ const NavBarContainer  = styled.div`
     gap: 2rem;
     margin: 2rem;
 `;
+

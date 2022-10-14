@@ -1,17 +1,10 @@
-import React, { useEffect } from 'react';
+import { Outlet } from 'react-router-dom';
 import styled from 'styled-components';
 import { Header } from './Header';
 import { NavBar } from './NavBar';
 
-const parentElementId = 'parent';
 
 const App = () => {
-  useEffect(() => {
-    //@ts-ignore
-    import('app1/injectApp').then(injector => injector.default(parentElementId));
-  }, []);
-
-  // App2 will be injected in the div with parentElementId
   return (
     <ContainerApp>
       <Header />
@@ -20,7 +13,7 @@ const App = () => {
         <NavBar />
       </LeftNavPanel>
       <ChildAppContainer>
-        <div id={parentElementId}></div>
+        <Outlet />
       </ChildAppContainer>
       </FlexContainer>
     </ContainerApp>

@@ -1,12 +1,12 @@
 
 module.exports = {
-    name: 'app1',
-    library: { type: 'var', name: 'app1' },
+    name: 'app2',
+    library: { type: 'var', name: 'app2' },
     filename: 'remoteEntry.js',
     exposes: {
       './injectApp': './src/injectApp',
     },
-    shared: {react: {requiredVersion: '18.1.0'}}
+    shared: {react: {requiredVersion: '18.2.0'}}
   };
 
 
