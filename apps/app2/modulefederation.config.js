@@ -6,7 +6,7 @@ module.exports = {
     exposes: {
       './injectApp': './src/injectApp',
     },
-    shared: {react: {requiredVersion: '18.2.0'}}
+    shared: {react: {requiredVersion: '17.0.0'}}
   };
 
 
