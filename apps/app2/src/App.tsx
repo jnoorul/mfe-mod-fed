@@ -5,8 +5,8 @@ import { NavBar } from './NavBar';
 function App({basePath}: {basePath: string}) {
   return (
     <BrowserRouter>
-      <h1>Child App 2</h1>
-      <h3>{`React Version ${React.version}`}</h3>
+      <h2>Child App 2</h2>
+      <h5>{`React Version ${React.version}`}</h5>
       <NavBar basePath={basePath} />
       <Switch>
         <Route path={`/${basePath}/tab1`}>
