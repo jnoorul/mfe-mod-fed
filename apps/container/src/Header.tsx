@@ -35,5 +35,5 @@ const PreferenceSection = styled.div`
   top: 1rem;
   right: 1rem;
   margin-top: 1.5rem;
-  width: 20rem;
+  width: 15rem;
 `;
